@@ -54,6 +54,7 @@ type (
 		Theme      string `ini:"theme"`
 		JSDisabled bool   `ini:"disable_js"`
 		WebFonts   bool   `ini:"webfonts"`
+		Lang       string `ini:"language"`
 
 		// Users
 		SingleUser       bool `ini:"single_user"`
@@ -89,6 +90,7 @@ func New() *Config {
 			Host:           "http://localhost:8080",
 			Theme:          "write",
 			WebFonts:       true,
+			Lang:           "en",
 			SingleUser:     true,
 			MinUsernameLen: 3,
 			MaxBlogs:       1,
